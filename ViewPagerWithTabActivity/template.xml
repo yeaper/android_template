@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<template
+    name="ViewPagerWithTab Activity"
+    minApi="16"
+    minBuildApi="16"
+    description="Creates a new viewpager activity with tab">
+
+    <category value="Activity" />
+    <formfactor value="Mobile" />
+
+    <parameter id="activityClass" name="Activity Name" type="string" default="Main2Activity"/>
+    <parameter id="activityLayoutName" name="Layout Name" type="string" default="activity_main2"/>
+    <parameter id="tabCount" name="Tab count" type="number" default="3"/>
+    <parameter id="isLauncher" name="Launcher Activity" type="boolean" default="false"/>
+
+    <parameter id="packageName" name="Package Name" type="string"/>
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_vp_with_tab_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
